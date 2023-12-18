@@ -18,7 +18,7 @@ return new class extends Migration
             $table->year('data_start');
             $table->year('data_end');
             // Foreign key relationship to filieres table (one-to-one)
-            $table->foreignId('filiere_id')->constrained('filieres', 'filiere_id');
+            $table->foreignId('filiere_id')->constrained('filieres');
             $table->timestamps();
         });
     }

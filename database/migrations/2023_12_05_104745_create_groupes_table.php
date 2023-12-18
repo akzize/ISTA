@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('groupe_name');
             // $table->integer('filiere_id');
             // Foreign key relationship to filieres table
-            $table->foreignId('filiere_id')->constrained('filieres', 'filiere_id');
+            $table->foreignId('filiere_id')->constrained('filieres');
 
             $table->timestamps();
         });
